@@ -5,11 +5,11 @@ Project 1 with all files and images
 
 The files in this repository were used to configure the network depicted below.
 
-(Diagrams/VirtualNetworkDiagram.png)
+https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/VirtualNetworkDiagram.PNG
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the filebeat-playbook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
-  (Diagrams/filebeat-playbook.yml)
+  https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/filebeat-playbook.yml.PNG
 
 This document contains the following details:
 - Description of the Topologu
