@@ -35,6 +35,7 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 -Metricbeat takes the metrics and statistics that collects and ships them to the output you specify
 
 
+
 | Name     | Function | IP Address | Operating System |
 |----------|----------|------------|------------------|
 | Jump Box   | Gateway  | 10.0.0.4   | Linux            |
@@ -47,19 +48,19 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
+Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: 76.246.168.139.
 
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Machines within the network can only be accessed by the JumpBox: 20.106.125.0
 
 A summary of the access policies in place can be found in the table below.
 
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Jump Box | Yes              | Home IP    |
+| Web-1 DVWA | No                  | 20.125.115.186 (RedTeamLB) |
+| Web-2 DVWA | No                  | 20.125.115.186 (RedTeamLB) |
+| Web-3 DVWA | No                  | 20.125.115.186 (RedTeamLB) |
+| ELK Server | Yes                 | Home IP              |
 
 ### Elk Configuration
 
