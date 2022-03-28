@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # This is the default ansible 'hosts' file.
 #
 # It should live in /etc/ansible/hosts
@@ -49,3 +50,6 @@
 # leading 0s:
 
 #db-[99:101]-node.example.com
+=======
+
+>>>>>>> 8c7818a1f47dc0b3bf1fbd6d5432505c9ca1814e
