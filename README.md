@@ -1,5 +1,4 @@
-# Unit13_Project1
-Project 1 with all files and images
+# Unit 13 Project 1 - ELK Stack Deployment
 
 ## Automated ELK Stack Deployment
 
