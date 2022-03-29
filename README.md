@@ -1,4 +1,4 @@
-# Unit 13 Project 1 - ELK Stack Deployment
+# Unit 13 - Project 1 - ELK Stack Deployment
 
 ## Automated ELK Stack Deployment
 
