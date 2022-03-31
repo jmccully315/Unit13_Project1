@@ -91,16 +91,16 @@ We have installed the following Beats on these machines:
 These Beats allow us to collect the following information from each machine:
 - Filebeat collects system log management and collecting data like "sudo" commands, SSH logins, and new users and groups created.
 
-While..
+While...
 - Metricbeat is connected to DVWA and tracks CPU usage, Memory, and Number of containers.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
+- Copy the yml files to the control node.
+- Update the hosts file to include IP addresses on the network.
+- Run the yml playbooks, and navigate to http://[Your_ELK_IP_address]:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
