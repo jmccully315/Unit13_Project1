@@ -12,7 +12,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 ![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/filebeat-playbook.yml.PNG "Filebeat Playbook")
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -64,12 +64,15 @@ A summary of the access policies in place can be found in the table below.
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
-- _TODO: What is the main advantage of automating configuration with Ansible?_
+- The main advantage is the automation of the configuration.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+- docker.io
+- Install pip3
+- Install Docker python module
+- Increasing the virtual memory
+- Download and launch a docker ELK docker container
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
