@@ -98,17 +98,18 @@ These Beats allow us to collect the following information from each machine:
 - Filebeat collects system log management and collecting data like `sudo` commands, SSH logins, and new users as well as groups created.
 
 While...
-- Metricbeat is connected to DVWA and tracks CPU usage, Memory, and Number of containers.
+- Metricbeat is connected to DVWA and tracks CPU usage and core stats, Memory stats, Number of containers as well as Network stats.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
-- Verify the Public IP of the machine you are using either by this link  [What is my IP address](https://www.icanhazip.com "icanhazip")
+- Verify the Public IP of the machine you are using either by this link, [What is my IP address](https://www.icanhazip.com "icanhazip") 
+- Or you can verify your IP address from the command line using the command `curl icanhazip.com`
 
 SSH into the control node and follow the steps below:
-- Copy the yml files to the control node.
+- Copy the **yml** files to the control nodes **/etc/ansible/** folder.
 - Update the **hosts** file to include IP addresses on the network.
-- Run the yml playbooks, and navigate to http://[Your_ELK_IP_address]:5601/app/kibana to check that the installation worked as expected.
+- Run the **filebeat-playbook.yml** and **metricbeat-playbook.yml**, and navigate to http://[Your_ELK_IP_address]:5601/app/kibana to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
 - 
