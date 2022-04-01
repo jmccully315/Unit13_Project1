@@ -163,7 +163,7 @@ SSH into the control node and follow the steps below:
 
 ### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
-- The specific commands the user will need to run in order to download the playbook and configuration files, update the files, etc:
+- The specific commands the user will need to run in order to download the playbook and configuration files, update the files, are as follows:
 
 | **COMMAND** | **PURPOSE** |
 |-------------|-------------|
