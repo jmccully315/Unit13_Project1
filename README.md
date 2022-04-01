@@ -121,3 +121,47 @@ SSH into the control node and follow the steps below:
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
 ### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
+
+- The specific commands the user will need to run in order to download the playbook and configuration files, update the files, etc:
+
+| **COMMAND** | **PURPOSE** |
+|-------------|-------------|
+| `ssh-keygen` | create a ssh key for setup of VM |
+| `sudo cat /ssh/id_rsa.pub` | to view the ssh public key |
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+
