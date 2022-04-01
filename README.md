@@ -126,12 +126,12 @@ SSH into the control node and follow the steps below:
 
 | **COMMAND** | **PURPOSE** |
 |-------------|-------------|
-| `ssh-keygen` | create a ssh key for setup of VM |
-| `sudo cat /ssh/id_rsa.pub` | to view the ssh public key |
-|
-|
-|
-|
+| `ssh-keygen` | Create a ssh key for setup of VM |
+| `sudo cat /ssh/id_rsa.pub` | To view the ssh public key |
+| `ssh [username]@[Jumpbox-IP-Address]` | Logs into Jumpbox VM |
+| `sudo docker start [docker_container]` | Starts docker container [your_docker_container_name] |
+| `sudo docker ps -a` | Lists all active/inactive containers |
+| `sudo docker attach [docker_container]` | Logs into docker container [your_docker_container_name]
 |
 |
 |
