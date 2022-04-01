@@ -53,9 +53,9 @@ Integrating an ELK server allows users to easily monitor the vulnerable VMs for 
 
 The machines on the internal network are not exposed to the public Internet. 
 
-Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: _76.246.168.139_**.
+Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses: _76.246.168.139_.
 
-Machines within the network can only be accessed by the JumpBox: 20.106.125.0
+Machines within the network can only be accessed by the JumpBox: _20.106.125.0_
 
 A summary of the access policies in place can be found in the table below.
 
