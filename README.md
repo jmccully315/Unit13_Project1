@@ -120,7 +120,17 @@ SSH into the control node and follow the steps below:
 
 - Download Filebeat playbook using this command: `curl -L -O https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-playbook.yml.txt > /etc/ansible/filebeat-config.yml`
 - Copy the [Filebeat Config file](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-config.cfg.txt) to **/etc/ansible** folder
-- Update the **filebeat-config.yml file to include your **ELK Server Private IP Address** by `nano /etc/ansible/filebeat-config.yml`
+- Update the **filebeat-config.yml** file to include your **ELK Server Private IP Address** by `nano /etc/ansible/filebeat-config.yml`
+
+var copy = function(target) {
+    var textArea = document.createElement('textarea')
+    textArea.setAttribute('style','width:1px;border:0;opacity:0;')
+    document.body.appendChild(textArea)
+    textArea.value = target.innerHTML
+    textArea.select()
+    document.execCommand('copy')
+    document.body.removeChild(textArea)
+}
 
 output.elasticsearch:
   # Boolean flag to enable or disable the output module.
@@ -139,6 +149,18 @@ output.elasticsearch:
 setup.kibana:
   host: "10.2.0.4:5601" 
 # TODO: Change this to the IP address of your ELK server
+
+var pres = document.querySelectorAll(".comment-body > pre")
+pres.forEach(function(pre){
+  var button = document.createElement("button")
+  button.className = "btn btn-sm"
+  button.innerHTML = "copy"
+  pre.parentNode.insertBefore(button, pre)
+  button.addEventListener('click', function(e){
+    e.preventDefault()
+    copy(pre.childNodes[0])
+  })
+})
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
