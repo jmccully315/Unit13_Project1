@@ -122,7 +122,7 @@ SSH into the control node and follow the steps below:
 - Copy the [Filebeat Config file](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-config.cfg.txt) to **/etc/ansible** folder
 - Update the **filebeat-config.yml** file to include your **ELK Server Private IP Address** by `nano /etc/ansible/filebeat-config.yml`
 
-
+![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/filebeat-config.yml.PNG)
 
 - _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
