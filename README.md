@@ -138,13 +138,28 @@ SSH into the control node and follow the steps below:
 ### Installation of Filebeat onto VM's
 
 - Login to Kibana > click **Logs: Add log data** > click **System Logs** > click **DEB** > click **Getting Started**
-- 
-
+- Copy the command: `curl -L -O https://artifacts.elasic.co/downloads/beats/filebeat/filebeat-7.6.1-amd64.deb`
+- Run the command in your Web VM's to download the `.deb` file
 
 ### Installation of Metricbeat onto VM's
 
+- Login to Kibana > click **Add Metric Data** > click **Docker Metrics** > click **DEB** > click **Getting Started**
+- Copy the command: `curl -L -O https://artifacts.elastic.co/downloads/beats/metricbeat/metricbeat-7.6.1-amd64.deb`
+- Run the command in your Web VM's to download the `.deb` file
 
+### Lists of Playbooks Needed to Configure Web VM's
 
+- For Ansible [Ansible Web Playbook YAML File](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/web-playbook.yml.txt)
+- For Filebeat [Filebeat Playbook YAML File](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-playbook.yml.txt)
+- Where do you copy it? **/etc/ansible/**
+- For Metricbeat [Metricbeat Playbook YAML File](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/metricbeat-playbook.yml.txt)
+- Where do you copy it? **/etc/ansible/**
+
+### Which file do you update to make Ansible run the playbook on a specific machine?
+
+- You will need to update the **hosts** file in the **/etc/ansible/** folder, adding the IP's of the Virtual Machines
+
+![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/hostsfile.PNG)
 
 ### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
