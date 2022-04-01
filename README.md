@@ -131,37 +131,31 @@ SSH into the control node and follow the steps below:
 | `ssh [username]@[Jumpbox-IP-Address]` | Logs into Jumpbox VM |
 | `sudo docker start [docker_container]` | Starts docker container [your_docker_container_name] |
 | `sudo docker ps -a` | Lists all active/inactive containers |
-| `sudo docker attach [docker_container]` | Logs into docker container [your_docker_container_name]
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
-|
+| `sudo docker attach [docker_container]` | Logs into docker container [your_docker_container_name] |
+| `cd /etc/ansible` | Changes directory to the Ansible directory |
+| `ls -laA` | Lists all files in the directory (including hidden files) |
+| `nano /etc/ansible/hosts` | To edit the **hosts** file |
+| `nano /etc/ansible/ansible.cfg` | To edit the **ansible.cfg** file |
+| `nano /etc/ansible/web-playbook.yml` | To edit the **web-playbook.yml** file |
+| `ansible-playbook /location/filename/` | To run the playbook |
+| `ssh ansibleuser@[WebVM-1_IP_Address]` | To log into the Web-1 VM |
+| `ssh ansibleuser@[WebVM-2_IP_Address]` | To log into the Web-2 VM |
+| `ssh ansibleuser@[WebVM-3_IP_Address]` | To log into the Web-3 VM |
+| `ssh ansibleuser@[ELK_Server_IP_Address]` | To log into the ELK Server VM |
+| `exit` | To exit out of any ssh session in any docker container/ Jumpbox |
+| `sudo apt-get update` | This will update all packages |
+| `sudo apt install docker.io` | Installs the docker application |
+| `sudo service docker start` | Starts the docker application |
+| `sudo systemctl status docker` | Checks the status of the docker application |
+| `sudo systemctl start docker` | Starts the docker service (if not already running) |
+| `sudo docker pull cyberxsecurity/ansible` | Pulls the docker container file |
+| `sudo docker run -ti cyberxsecurity/ansible bash` | Runs and creates a docker container image |
+| `ansible -m ping all` | Checks the connection of the ansible containers |
+| `curl -L -O [location_of_the_file_on_the_web]` | Downloads a file from the web |
+| `dpkg -i [filename]` | Installs the file i.e. (filebeat/metricbeat) |
+| `http://[ELK_Server_IP_Address]:5601//app/kibana` | Open web browser and navigate to this link to access Kibana logs |
+| `nano filebeat-config.yml` | Creates and/or edits filebeat configuration file |
+| `nano filebeat-playbook.yml` | Creates and/or edits YAML file to install filebeat to webservers |
+| `nano metricbeat-config.yml` | Creates and/or edits metricbeat configuration file |
+| `nano metricbeat-playbook.yml` | Creates and/or edits YAML file to install metricbeat to webservers |
 
