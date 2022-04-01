@@ -95,13 +95,15 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects system log management and collecting data like 'sudo' commands, SSH logins, and new users and groups created.
+- Filebeat collects system log management and collecting data like `sudo` commands, SSH logins, and new users as well as groups created.
 
 While...
 - Metricbeat is connected to DVWA and tracks CPU usage, Memory, and Number of containers.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
+
+- Verify the Public IP of the machine you are using either by this link  [What is my IP address](https://www.icanhazip.com "icanhazip")
 
 SSH into the control node and follow the steps below:
 - Copy the yml files to the control node.
