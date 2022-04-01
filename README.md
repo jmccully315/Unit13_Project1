@@ -118,14 +118,33 @@ SSH into the control node and follow the steps below:
 
 ### For Filebeat
 
-- Download Filebeat playbook using this command: `curl -L -O https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-playbook.yml.txt > /etc/ansible/filebeat-config.yml`
+- Download Filebeat playbook using this command: `curl -L -O https://gist.githubusercontent.com/slape/5cc350109583af6cbe577bbcc0710c93/raw/eca603b72586fbe148c11f9c87bf96a63cb25760/Filebeat > /etc/ansible/filebeat-config.yml`
 - Copy the [Filebeat Config file](https://github.com/jmccully315/Unit13_Project1/blob/main/Ansible/filebeat-config.cfg.txt) to **/etc/ansible** folder
 - Update the **filebeat-config.yml** file to include your **ELK Server Private IP Address** by `nano /etc/ansible/filebeat-config.yml`
 
 ![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/filebeat-config.yml.PNG)
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+- Run the playbook using this command `ansible-playbook filebeat-playbook.yml` and navigate to Kibana > click **Logs: Add log data** > click **System Logs (DEB)** > scroll down to **5: Module Status** > click **Check data** this will check to see if the installation has worked as expected.
+
+### For Metricbeat
+
+- Download Metricbeat playbook using this command: ` curl -L -O https://gist.githubusercontent.com/slape/58541585cc1886d2e26cd8be557ce04c/raw/0ce2c7e744c54513616966affb5e9d96f5e12f73/metricbeat > /etc/ansible/files/metricbeat-config.yml`
+- Update the **metricbeat-config.yml** file to include the **ELK Server Private IP Address** by `nano /etc/ansible/files/metricbeat-config.yml`
+
+![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/metricbeat-config.yml.PNG)
+
+- Run the playbook using this command `ansible-playbook metricbeat-playbook.yml` and navigat to Kibana > click **Logs: Add Metric data** > click **Docker Metrics (DEB) > scroll down to **5: Module Status** > click **Check data** this will check to see if the installation has worked as expected.
+
+### Installation of Filebeat onto VM's
+
+- Login to Kibana > click **Logs: Add log data** > click **System Logs** > click **DEB** > click **Getting Started**
+- 
+
+
+### Installation of Metricbeat onto VM's
+
+
+
 
 ### As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc.
 
