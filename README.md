@@ -95,7 +95,7 @@ We have installed the following Beats on these machines:
 - Metricbeat
 
 These Beats allow us to collect the following information from each machine:
-- Filebeat collects system log management and collecting data like "sudo" commands, SSH logins, and new users and groups created.
+- Filebeat collects system log management and collecting data like 'sudo' commands, SSH logins, and new users and groups created.
 
 While...
 - Metricbeat is connected to DVWA and tracks CPU usage, Memory, and Number of containers.
