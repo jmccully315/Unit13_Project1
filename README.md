@@ -1,4 +1,10 @@
-# Unit 13 - Project 1 - ELK Stack Deployment
+# Project 1 - ELK Stack Deployment
+
+---
+
+UC Davis Cybersecurity Bootcamp Class of 2022
+
+---
 
 ## Automated ELK Stack Deployment
 
