@@ -133,7 +133,7 @@ SSH into the control node and follow the steps below:
 
 ![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/metricbeat-config.yml.PNG)
 
-- Run the playbook using this command `ansible-playbook metricbeat-playbook.yml` and navigat to Kibana > click **Logs: Add Metric data** > click **Docker Metrics (DEB) > scroll down to **5: Module Status** > click **Check data** this will check to see if the installation has worked as expected.
+- Run the playbook using this command `ansible-playbook metricbeat-playbook.yml` and navigat to Kibana > click **Logs: Add Metric data** > click **Docker Metrics (DEB)** > scroll down to **5: Module Status** > click **Check data** this will check to see if the installation has worked as expected.
 
 ### Installation of Filebeat onto VM's
 
