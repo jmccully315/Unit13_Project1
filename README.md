@@ -8,7 +8,7 @@ UC Davis Cybersecurity Bootcamp Class of 2022
 
 ## Automated ELK Stack Deployment
 
-The files in this repository were used to configure the network depicted below.
+The files in the Ansible repository were used to configure the network depicted below.
 
 ![alt text](https://github.com/jmccully315/Unit13_Project1/blob/main/Diagrams/VirtualNetworkDiagram.PNG "Virtual Network")
 
